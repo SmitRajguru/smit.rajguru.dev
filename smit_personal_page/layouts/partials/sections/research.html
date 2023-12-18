@@ -1,0 +1,91 @@
+{{ if .Site.Params.research.enable | default false }}
+<section id="research" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.research.title | default "Research" }}</h3>
+        <div class="row justify-content-center py-5">
+            {{ $indexMenu := .Site.Params.research.index }}
+            {{ range $index, $element := .Site.Params.research.items }}
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    {{ if $indexMenu }}
+                    <div class="col-md-1 text-center me-2 p-0 d-none d-md-block">
+                        <div class="py-2">
+                            <span class="index shadow-lg">
+                                {{ add $index 1 }}
+                            </span>
+                        </div>
+                    </div>
+                    {{ end }}
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ .title }}</h5>
+
+                                {{ if .authors }}
+                                <!-- <div class="py-1"> -->
+                                <i>
+                                    <small>{{ .authors | markdownify}}</small>
+                                </i>
+                                <!-- </div> -->
+                                {{ end }}
+
+                                
+                                {{ if .school }}
+                                    {{ if .school.url }}
+                                    <a href="{{ .school.url }}" target="_blank">
+                                        <h6>
+                                        {{ .school.name }}
+                                        </h6>
+                                    </a>
+                                    {{ else }}
+                                    {{ .school.name }}
+                                    {{ end }}
+                                {{ end }}
+
+                                
+
+                                {{ if .medium }}
+                                <div class="py-1 research-medium">
+                                    <medium>{{ .medium.type }}:</medium>
+                                    <i>
+                                        <small>{{ .medium.name }}</small>
+                                    </i>
+
+                                    <br/>
+
+                                    {{ if .medium.doi }}
+                                        <medium>DOI:</medium>
+                                        <i>
+                                            <small>{{ .medium.doi | markdownify}}</small>
+                                        </i>
+                                    {{ else }}
+                                        <medium>Status:</medium>
+                                        <i>
+                                            <small>{{ .medium.status | markdownify}}</small>
+                                        </i>
+                                    {{ end }}
+                                </div>
+                                {{ end }}    
+                                
+                                <div class="py-1 research-content">
+                                    {{ .content | markdownify}}
+                                </div>
+
+                                {{ if .featuredLink.enable }}
+                                <div class="py-1">
+                                    <a href="{{ .featuredLink.url }}" class="btn">
+                                        {{ .featuredLink.name | default "Featured" }}
+                                    </a>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
