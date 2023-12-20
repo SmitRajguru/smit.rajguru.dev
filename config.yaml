@@ -421,11 +421,13 @@ params:
 
   #Contact
   contact:
-    enable: false
+    enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
-    btnName: Mail me
+    content: |-
+      [Schedule a Meeting](https://calendly.com/rajgurusmit/one-on-one-meeting-smit-rajguru) | Mob: [+1 (716) 520-7988](tel:+17165207988) | E-Mail: smit@rajguru.dev
+
+    email: smit@rajguru.dev
+    btnName: Send Email
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
