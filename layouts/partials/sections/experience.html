@@ -105,6 +105,8 @@
                                     </span>
                                     {{ end }}
                                 </div>
+
+                                
                                 
                                 {{ if .featuredLink.enable | default false }}
                                 <div class="py-2 featuredLink">
@@ -118,6 +120,25 @@
                             <div class="pt-2">
                                 {{ .content | markdownify}}
                             </div>
+
+                            {{ if .otherRoles.enable | default false }}
+                            <div class="pb-1">
+                                <span class="h6">{{ .otherRoles.title }}</span>
+                                <UL TYPE=”square”>
+                                    {{ range $indRole, $elemRole := .otherRoles.items }}
+                                    <LI>
+                                        <div class="pb-1">
+                                            <span class="h7">{{ .name }}</span>
+                                            <small>-</small>
+                                            <span class="pb-1">
+                                                <small>{{ .date }}</small>
+                                            </span>
+                                        </div>
+                                    </LI>
+                                    {{ end }}
+                                </UL>
+                            </div>
+                            {{ end }}
                         </div>
                         {{ end }}
                         {{ end }}

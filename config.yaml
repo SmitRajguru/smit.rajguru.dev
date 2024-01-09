@@ -78,7 +78,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "dark" # light
+    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -160,7 +160,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a Master's student at UB collaborating with [Dr. Karthik Dantu](https://cse.buffalo.edu/faculty/kdantu/) in the [DRONES Lab](https://droneslab.github.io/), I specialize in robot autonomy, planning, and control.
+      I am a Master's student at [The State University of New York at Buffalo (UB)](https://www.buffalo.edu/) collaborating with [Dr. Karthik Dantu](https://cse.buffalo.edu/faculty/kdantu/) in the [DRONES Lab](https://droneslab.github.io/), I specialize in robot autonomy, planning, and control.
 
       My ongoing research focuses on autonomous racing, and I'm actively seeking full-time roles in the realm of robot autonomy and/or autonomous driving.
     skills:
@@ -186,7 +186,7 @@ params:
       - job: "Research & Teaching Assistant"
         company: "DRONES Lab"
         companyUrl: "https://droneslab.github.io/"
-        date: "Jan 2023 - present"
+        date: "January 2023 - December 2023"
         # featuredLink:
         #   enable: true
         #   name: "View the project"
@@ -199,7 +199,15 @@ params:
           - Redesigned Robotics Algorithms course, integrating insights from a new simulator, and developed automated methods for evaluating ROS based assignments for **200** students over 2 semesters.
 
       - job: "Software Developer II"
-        company: "Aurigo Software "
+        otherRoles:
+          enable: true
+          title: "Previous Roles"
+          items:
+            - name: "Software Developer I"
+              date: "July 2020 - January 2022"
+            - name: "Member Technical Staff - Intern"
+              date: "July 2019 - July 2020"
+        company: "Aurigo Software"
         companyUrl: "https://www.aurigo.com/"
         date: "January 2022 - July 2022"
         info:
@@ -208,29 +216,8 @@ params:
         content: |-
           - Implemented features for Aurigo's Masterworks Cloud platform using ASP .Net and MSSQL.
           - Optimized performance of XML controls resulting in a **2.5x** reduction in response time.
-          - Led a team of **6** in addressing product bugs and client feedback items during Q4 2021 & Q1 2022.
-
-      - job: "Software Developer I"
-        company: "Aurigo Software "
-        companyUrl: "https://www.aurigo.com/"
-        date: "July 2020 - January 2022"
-        info:
-          enable: true
-          content: "I worked as a software developer at various levels for about 3 years at Aurigo."
-        content: |-
-          - Implemented features for Aurigo's Masterworks Cloud platform using ASP .Net and MSSQL.
-          - Led a team of **6** in addressing product bugs and client feedback items during Q4 2021 & Q1 2022.
           - Mentored and Trained **3** freshers on Aurigo's Masterworks Cloud platform and industry code standards.
-
-      - job: "Member Technical Staff - Intern"
-        company: "Aurigo Software "
-        companyUrl: "https://www.aurigo.com/"
-        date: "July 2019 - July 2020"
-        info:
-          enable: true
-          content: "I worked as a software developer at various levels for about 3 years at Aurigo."
-        content: |-
-          - Implemented features for Aurigo's Masterworks Cloud platform using ASP .Net and MSSQL.
+          - Led a team of **6** in addressing product bugs and client feedback items during Q4 2021 & Q1 2022.
           - Performed security fixes to the platform to ensure compliance with **OWASP** standards.
 
       - job: "First Aid Training Instructor - Intern"
@@ -302,8 +289,8 @@ params:
         school:
           name: "The State University of New York at Buffalo (UB), Buffalo, NY"
           url: "https://www.buffalo.edu/"
-        date: "August 2022 - Present"
-        GPA: "4.0 out of 4.0 (Current)"
+        date: "August 2022 - December 2023"
+        GPA: "4.0 out of 4.0"
         content: |-
           Assistantships
             - Distributed RObotics and Networked Embedded Sensing (DRONES) Lab  - *Research Assistant (Autonomous Racing)*
@@ -347,6 +334,56 @@ params:
       #     name: "Symbiosis Primary School, Pune, India"
       #   GPA: "91.0 out of 100"
 
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: F1Tenth Autonomous Racing
+        content: A cutting-edge project exploring AI-driven navigation and control for 1/10th scale racecars, merging the thrill of Formula 1 with advanced robotics and autonomous systems. Experience the fusion of precision engineering and AI as these miniature vehicles tackle challenging racing environments autonomously.
+        image: /images/projects/f1tenth/f1tenth_NX.png
+        featured:
+          name: F1TENTH
+          link: https://f1tenth.org/
+        badges:
+          - "ROS"
+          - "Autonomy"
+          - "Planning"
+          - "Control"
+          - "Unity3D"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/droneslab/audubon-ws
+
+      # - title: Image Converter
+      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #   image: /images/projects/converter.jpg
+      #   featured:
+      #     name: Demo
+      #     link: https://django-converter.herokuapp.com
+      #   badges:
+      #     - "Django"
+      #     - "Bootstrap"
+      #   links:
+      #     - icon: fa fa-envelope
+      #       url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/converter
+
+      # - title: Hugo Profile V2
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile2.jpg
+      #   featured:
+      #     name: Demo V2
+      #     link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "Hugo"
+      #     - "Bootstrap"
+      #     - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
+
   # Achievements
   achievements:
     enable: false
@@ -368,56 +405,6 @@ params:
       - title: Google Summer of Code
         content: Contributed to a open source project.
         url: https://example.com
-
-  # projects
-  projects:
-    enable: false
-    # title: "Custom Name"
-    items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
