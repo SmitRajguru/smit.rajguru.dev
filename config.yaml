@@ -341,7 +341,7 @@ params:
     items:
       - title: F1Tenth Autonomous Racing
         content: A cutting-edge project exploring AI-driven navigation and control for 1/10th scale racecars, merging the thrill of Formula 1 with advanced robotics and autonomous systems. Experience the fusion of precision engineering and AI as these miniature vehicles tackle challenging racing environments autonomously.
-        image: /images/projects/f1tenth/f1tenth_NX.png
+        image: /images/projects/f1tenth/f1tenth.png
         featured:
           name: F1TENTH
           link: https://f1tenth.org/
@@ -354,6 +354,57 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/droneslab/audubon-ws
+
+      - title: Flipkart GRiD - Te[a]ch The Machines
+        content: An annual campus competition for select Indian engineering students to showcase tech skills, competing in a machine learning-driven challenge, leading to a national finale at Flipkart HQ.
+        image: /images/projects/grid/grid.png
+        featured:
+          name: GRiD 2019
+          link: https://unstop.com/hackathons/flipkart-grid-teach-the-machines-2019-flipkart-74928
+        badges:
+          - "python"
+          - "Machine Learning"
+          - "Object Detection"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/SmitRajguru
+
+      - title: Brain Computer Interface
+        content: BCI-enabled wheelchair and home automation systems leverage brain-computer interface technology, enabling users to control devices and mobility aids through neural signals, offering enhanced accessibility and independence.
+        image: /images/projects/bci/bits-logo.png
+        featured:
+          name: CNS Lab
+          link: http://bitscogneuro.com/
+        badges:
+          - "BCI"
+          - "Automation"
+
+      - title: ABU Robocon
+        content: ABU Robocon is an international robotics competition where student teams design and build robots to compete in intricate challenges. It's a platform that fosters innovation and engineering prowess among participants from Asia-Pacific countries.
+        image: /images/projects/robocon/logo.jpg
+        featured:
+          name: ROBOCON 2017
+          link: https://official-robocon.com/aburobocon/
+        badges:
+          - "Arduino"
+          - "Robotics"
+          - "Autonomy"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/SmitRajguru
+
+      - title: First Tech Challenge
+        content: First Tech Challenge is an international robotics competition engaging students in designing, building, and programming robots to compete in intricate tasks. Participants collaborate, innovate, and problem-solve in a thrilling engineering challenge.
+        image: /images/projects/ftc/FTC.png
+        featured:
+          name: FTC India
+          link: https://firsttechchallenge.in/index.php
+        badges:
+          - "Robotics"
+          - "Autonomy"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/SmitRajguru
 
       # - title: Image Converter
       #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.

@@ -1,7 +1,7 @@
 ---
 title: "Test Blog"
 date: 2023-12-20T11:09:33+05:30
-draft: false
+draft: true
 author: "Smit Rajguru"
 tags:
   - test blog
