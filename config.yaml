@@ -160,7 +160,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a Master's student at [The State University of New York at Buffalo (UB)](https://www.buffalo.edu/) collaborating with [Dr. Karthik Dantu](https://cse.buffalo.edu/faculty/kdantu/) in the [DRONES Lab](https://droneslab.github.io/), I specialize in robot autonomy, planning, and control.
+      I am a recent Robotics Masters Graduate from [The State University of New York at Buffalo (UB)](https://www.buffalo.edu/) collaborating with [Dr. Karthik Dantu](https://cse.buffalo.edu/faculty/kdantu/) in the [DRONES Lab](https://droneslab.github.io/), I specialize in robot autonomy, planning, and control.
 
       My ongoing research focuses on autonomous racing, and I'm actively seeking full-time roles in the realm of robot autonomy and/or autonomous driving.
     skills:
