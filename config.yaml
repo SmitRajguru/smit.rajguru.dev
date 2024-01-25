@@ -261,7 +261,7 @@ params:
         medium:
           type: "Conference"
           name: "IEEE/RSJ International Conference on Intelligent Robots and Automation (iROS) 2023"
-          status: "Accepted - Email for access"
+          doi: "[10.1109/IROS55552.2023.10341603](https://ieeexplore.ieee.org/document/10341603)"
         content: |-
           - Conducted research on baseline controllers for an advanced autonomous racing system.
           - Explored and developed feasible velocity profiles for optimized performance.
