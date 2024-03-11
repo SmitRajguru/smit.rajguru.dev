@@ -160,9 +160,9 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a recent Masters' Graduate - Robotics from [The State University of New York at Buffalo (UB)](https://www.buffalo.edu/) collaborating with [Dr. Karthik Dantu](https://cse.buffalo.edu/faculty/kdantu/) in the [DRONES Lab](https://droneslab.github.io/), I specialize in robot autonomy, planning, and control.
+      I am a Masters' Graduate - Robotics from [The State University of New York at Buffalo (UB)](https://www.buffalo.edu/) collaborating with [Dr. Karthik Dantu](https://cse.buffalo.edu/faculty/kdantu/) in the [DRONES Lab](https://droneslab.github.io/), I specialize in robot autonomy, planning, and control.
 
-      My ongoing research focuses on autonomous racing, and I'm actively seeking full-time roles in the realm of robot autonomy and/or autonomous driving.
+      At [Zoox Inc.](https://zoox.com/), I contribute to the Planner Motion team, generating local plans and controls for Zoox's autonomous vehicles in complex urban environments.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -183,6 +183,21 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Software Engineer"
+        company: "Zoox Inc"
+        companyUrl: "https://zoox.com/"
+        date: "March 2024 - Present"
+        # featuredLink:
+        #   enable: true
+        #   name: "View the project"
+        #   url: "https://example.com"
+        info:
+          enable: true
+          content: I am working as a software developer in the Planner Motion team.
+        content: |-
+          - Generating smooth and safe controls for autonomous vehicles in complex urban environments.
+          - Optimizing local plans for Zoox's autonomous vehicles.
+
       - job: "Research & Teaching Assistant"
         company: "DRONES Lab"
         companyUrl: "https://droneslab.github.io/"
